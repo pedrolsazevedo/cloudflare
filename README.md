@@ -5,9 +5,12 @@
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >1.3.0 |
 | <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 4.0.0 |
 
-Cloudflare API Token with the following permission:
-```
-Zone Settings:Edit, Zone:Edit, DNS:Edit
+1. [Cloudflare API Token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)
+
+2. Create an environment variable with the value as described in [Terraform Cloudflare Provider Documentation](https://registry.terraform.io/providers/cloudflare/cloudflare/latest)
+
+```shell
+export CLOUDFLARE_API_TOKEN="SAMPLE_VALUE_F7964E4AF8964366B210785A9BABEAC9"
 ```
 
 ## Providers
@@ -41,7 +44,14 @@ No modules.
 |------|-------------|
 | <a name="output_DNSSEC_zones"></a> [DNSSEC\_zones](#output\_DNSSEC\_zones) | n/a |
 | <a name="output_DNS_zones"></a> [DNS\_zones](#output\_DNS\_zones) | n/a |
-| <a name="output_var"></a> [var](#output\_var) | n/a |
+| <a name="output_Subdomains"></a> [Subdomains](#output\_Subdomains) | n/a |
 
-## Repository information
-Using commitizen to enforce versions.
+## Extra tools used:
+1. [Commitezen](https://commitizen-tools.github.io/)
+
+2. [terraform-docs](https://terraform-docs.io/)
+
+## Bonus content
+
+1. Very nice song: 
+  [500 Miles - Inside Llewyn Davis](https://www.youtube.com/watch?v=HAZJAzCshN4)

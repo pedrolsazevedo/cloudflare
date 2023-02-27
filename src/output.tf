@@ -6,6 +6,6 @@ output "DNSSEC_zones" {
   value = cloudflare_zone_dnssec.default[*]
 }
 
-output "var" {
+output "Subdomains" {
   value = local.all_subdomains
 }
